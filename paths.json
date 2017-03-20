@@ -1,0 +1,49 @@
+{
+  "in": "src",
+  "out": "dist",
+
+  "sass": {
+    "readPaths": [
+      "src/assets/sass/vendor/font-awesome/font-awesome.scss",
+      "src/assets/sass/vendor/bulma/bulma.sass",
+      "src/assets/sass/main.sass"
+    ],
+    "prefixs": [
+      "> 1%",
+      "last 2 versions",
+      "firefox >= 4",
+      "safari 7",
+      "safari 8",
+      "IE 8",
+      "IE 9",
+      "IE 10",
+      "IE 11"
+    ],
+    "watch": [
+      "src/assets/sass/**/*.sass"
+    ],
+    "out": "assets/css"
+  },
+
+  "scripts": {
+    "readPaths": [
+      "bower_components/bulma/bulma.sass",
+      "src/assets/sass/main.sass"
+    ],
+    "watch": [
+      "src/assets/sass/**/*.sass"
+    ],
+    "out": "assets/css"
+  },
+
+  "images": {
+    "readPaths": [
+      "bower_components/bulma/bulma.sass",
+      "src/assets/sass/main.sass"
+    ],
+    "watch": [
+      "src/assets/sass/**/*.sass"
+    ],
+    "out": "assets/css"
+  }
+}

@@ -27,13 +27,12 @@
 
   "scripts": {
     "readPaths": [
-      "bower_components/bulma/bulma.sass",
-      "src/assets/sass/main.sass"
+      "src/assets/js/*.js"
     ],
     "watch": [
-      "src/assets/sass/**/*.sass"
+      "src/assets/js/**/*.js"
     ],
-    "out": "assets/css"
+    "out": "assets/js"
   },
 
   "images": {

@@ -8,4 +8,5 @@ let atributos = {
   ]
 }
 const deglier = new core.Pessoa(atributos)
-deglier.sayHello()
+let saida = deglier.sayHello()
+document.write("Hello")

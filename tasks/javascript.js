@@ -8,26 +8,26 @@ import uglify from 'gulp-uglify'
 import rename from 'gulp-rename'
 import concat from 'gulp-concat'
 
-import duo from 'gulp-duo'
-import duoBabel from 'duo-babel'
+import tsc from 'gulp-typescript'
 
 export const devJs = () => src(paths.scripts.readPaths)
   .pipe(plumber())
   .pipe(sourcemaps.init())
   .pipe(babel({presets: ['es2015']}))
   // .pipe(uglify())
-  .pipe(concat())
-  .pipe(rename({suffix: '.min'}))
+  .pipe(concat('main.js'))
+  // .pipe(rename({suffix: '.min'}))
   .pipe(sourcemaps.write('./'))
   .pipe(dest(`${paths.out}/${paths.scripts.out}/`))
 
 
-export const duoJs = () => src(paths.scripts.readPaths)
+export const devTs = () => src(paths.scripts.readPaths)
   .pipe(plumber())
-  .pipe(duo({
-    plugins: [
-      duoBabel()
-    ]
+  .pipe(sourcemaps.init())
+  .pipe(tsc({
+    target: 'ES3',
+    module: 'umd'
   }))
-  .pipe(rename('main.js'))
-  .pipe(gulp.dest(`${paths.out}/${paths.scripts.out}/`))
+  .pipe(concat('index.js'))
+  .pipe(sourcemaps.write('./'))
+  .pipe(dest(`${paths.out}/${paths.scripts.out}`))

@@ -3077,6 +3077,15 @@ gulp-sourcemaps@^2.4.1:
     through2 "2.X"
     vinyl "1.X"
 
+gulp-typescript@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/gulp-typescript/-/gulp-typescript-3.1.6.tgz#6c67b84364cf3589a9ad6fdea2e3c0bc525c435e"
+  dependencies:
+    gulp-util "~3.0.7"
+    source-map "~0.5.3"
+    through2 "~2.0.1"
+    vinyl-fs "~2.4.3"
+
 gulp-uglify@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-2.1.1.tgz#e722f7b5b2dc20ecc4bc05a663e5d788bd2ba3c4"
@@ -3110,7 +3119,7 @@ gulp-util@^2.2.14, gulp-util@~2.2.0:
     through2 "^0.5.0"
     vinyl "^0.2.1"
 
-gulp-util@^3, gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.7:
+gulp-util@^3, gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.1, gulp-util@^3.0.7, gulp-util@~3.0.7:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.8.tgz#0054e1e744502e27c04c187c3ecc505dd54bbb4f"
   dependencies:
@@ -5722,7 +5731,7 @@ source-map@0.4.x:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@0.X, source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.6, source-map@~0.5.0, source-map@~0.5.1:
+source-map@0.X, source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.6, source-map@~0.5.0, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -6024,7 +6033,7 @@ through2-filter@^2.0.0:
     through2 "~2.0.0"
     xtend "~4.0.0"
 
-through2@2.X, through2@^2, through2@^2.0.0, through2@^2.0.1, through2@~2.0.0:
+through2@2.X, through2@^2, through2@^2.0.0, through2@^2.0.1, through2@~2.0.0, through2@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
@@ -6181,6 +6190,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
+typescript@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.1.tgz#4862b662b988a4c8ff691cc7969622d24db76ae9"
+
 ua-parser-js@0.7.12:
   version "0.7.12"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
@@ -6324,7 +6337,7 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-vinyl-fs@^2.0.0:
+vinyl-fs@^2.0.0, vinyl-fs@~2.4.3:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/vinyl-fs/-/vinyl-fs-2.4.4.tgz#be6ff3270cb55dfd7d3063640de81f25d7532239"
   dependencies:

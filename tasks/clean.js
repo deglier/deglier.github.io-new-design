@@ -1,8 +1,8 @@
 import del from 'del'
-import paths from '../config'
+import config from '../config'
 
-export const clean = () => del([paths.out])
+export const clean = () => del([config.out])
 
-export const cleanCss = () => del([`${paths.out}/${paths.sass.out}`])
+export const cleanCss = () => del([`${config.out}/${config.sass.out}`])
 
-export const cleanJs = () => del([`${paths.out}/${paths.scripts.out}`])
+export const cleanJs = () => del([`${config.out}/${config.scripts.out}`])

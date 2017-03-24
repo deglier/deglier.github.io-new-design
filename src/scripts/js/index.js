@@ -1,6 +1,5 @@
-define(["require", "exports", "./SlideMenu"], function (require, exports, SlideMenu_1) {
+define(["require", "exports", "./Bulma/ToggleMenu"], function (require, exports, ToggleMenu_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    // Configurando o SlideMenu
-    var mainMenu = new SlideMenu_1.default('.toggle-menu', '.wrapper', 'show-menu');
+    var slideMenu = new ToggleMenu_1.default("nav-toggle", "nav-menu");
 });

@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "amd",
-    "outDir": "./src/assets/js/",
-    "watch": true
-  },
-  "compileOnSave": true
-}

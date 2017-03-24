@@ -89,7 +89,7 @@
     "watch": [
       "src/scripts/ts/**/*.ts"
     ],
-    "out": "/assets/js"
+    "out": "/scripts/js"
   },
 
 

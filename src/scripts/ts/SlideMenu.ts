@@ -1,44 +1,30 @@
 export default class SlideMenu
 {
-  // variáveis
-  public toggleMenu: any
-  public container: any
-  public changeMenu: any
+  public toggleClass: any
+  public menuClass: any
+  public change: string
 
-  /**
-   * 
-   * @param toggleMenu Classe reponsável por fazer a troca entre menu aberto e menu fechado
-   * @param container Elemento que receberá/será removida a classe do estado do menu
-   */
-  constructor(toggleMenu: string, container: string, changeMenu: string)
+  constructor(toggleClass: string, menuClass: string, isActive?: string)
   {
-    this.toggleMenu = document.querySelectorAll(toggleMenu)
-    this.container = document.querySelector(container)
-    this.changeMenu = changeMenu
+    this.toggleClass = document.getElementById(toggleClass)
+    this.menuClass = document.getElementById(menuClass)
+    this.change = isActive ? isActive : 'is-active'
 
-    let i:number;
-    for(i = 0; i<this.toggleMenu.length; i++)
-    {
-      this.toggleMenu[i].addEventListener('click', () => {
-        this.menuAction(this.container, this.changeMenu)
-      })
-    }
-    console.log(this.changeMenu)
+    this.addEvents(this.toggleClass)
   }
 
-  menuAction(container, changeMenu)
+  toggle()
   {
-    // let container = e.path[1]
-    console.log(container)
-    if(container.classList.contains(changeMenu))
+    this.toggleClass.classList.toggle(this.change)
+    this.menuClass.classList.toggle(this.change)
+  }
+
+  addEvents(arr: Array<any>)
+  {
+    let i: number
+    for(i=0;i<arr.length;i++)
     {
-      container.classList.remove(changeMenu)
-    }
-    else
-    {
-      container.classList.add(changeMenu)
+      arr[i].addEventListener('click', () => {this.toggle()})
     }
   }
 }
-
-

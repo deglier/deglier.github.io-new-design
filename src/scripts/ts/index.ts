@@ -1,5 +1,3 @@
-import SlideMenu from './SlideMenu'
+import ToggleMenu from './Bulma/ToggleMenu'
 
-
-// Configurando o SlideMenu
-var mainMenu = new SlideMenu('.toggle-menu', '.wrapper', 'show-menu')
+let slideMenu = new ToggleMenu("nav-toggle", "nav-menu")

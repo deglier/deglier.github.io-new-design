@@ -22,10 +22,10 @@
 
   "pug": {
     "readPaths": [
-      "src/pug/**/*.pug"
+      "src/views/**/*.pug"
     ],
     "watch": [
-      "src/pug/**/*.pug"
+      "src/views/**/*.pug"
     ],
     "out": "/"
   },
@@ -35,10 +35,10 @@
 
   "fonts": {
     "readPaths": [
-      "src/assets/fonts/**/*"
+      "src/fonts/**/*"
     ],
     "watch": [
-      "src/assets/fonts/**/*"
+      "src/fonts/**/*"
     ],
     "out": "/assets/fonts"
   },
@@ -48,7 +48,7 @@
 
   "sass": {
     "readPaths": [
-      "src/assets/sass/main.sass"
+      "src/sass/main.sass"
     ],
     "prefixs": [
       "> 1%",
@@ -62,7 +62,7 @@
       "IE 11"
     ],
     "watch": [
-      "src/assets/sass/**/*.sass"
+      "src/sass/**/*.sass"
     ],
     "out": "/assets/css"
   },
@@ -74,20 +74,20 @@
 
   "scripts": {
     "readPaths": [
-      "src/assets/js/**/*.js"
+      "src/scripts/js/**/*.js"
     ],
     "watch": [
-      "src/assets/js/**/*.js"
+      "src/scripts/js/**/*.js"
     ],
     "out": "/assets/js"
   },
 
   "ts": {
     "readPaths": [
-      "src/assets/ts/**/*.ts"
+      "src/scripts/ts/**/*.ts"
     ],
     "watch": [
-      "src/assets/ts/**/*.ts"
+      "src/scripts/ts/**/*.ts"
     ],
     "out": "/assets/js"
   },
@@ -99,31 +99,31 @@
 
   "images": {
     "readPaths": [
-      "src/assets/img/**/*.{jpg,svg,png,gif}"
+      "src/img/**/*.{jpg,svg,png,gif}"
     ],
     "options":{
       "optimizationLevel": 5, "progessive": true, "interlaced": true
     },
     "watch": [
-      "src/assets/sass/**/*.sass"
+      "src/sass/**/*.sass"
     ],
     "out": "/assets/img"
   },
     "svg": {
     "readPaths": [
-      "src/assets/svg/**/*.svg"
+      "src/svg/**/*.svg"
     ],
     "options":{
       "padding": 10,
       "baseSize": 15,
-      "cssFile": "assets/sass/_sprite.sass",
+      "cssFile": "sass/_sprite.sass",
       "svg": { 
         "sprite": "../img/sprite.svg"
       }
     },
     "svgFile":"../img/sprite.svg",
     "watch": [
-      "src/assets/svg/**/*.svg"
+      "src/svg/**/*.svg"
     ],
     "out": "/assets/img"
   }

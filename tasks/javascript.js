@@ -1,33 +1,27 @@
 import {gulp, src, dest} from 'gulp'
-import paths from '../config'
+import config from '../config'
+import browserSync from 'browser-sync'
 
-import babel from 'gulp-babel'
 import plumber from 'gulp-plumber'
 import sourcemaps from 'gulp-sourcemaps'
 import uglify from 'gulp-uglify'
 import rename from 'gulp-rename'
 import concat from 'gulp-concat'
 
-import tsc from 'gulp-typescript'
-
-export const devJs = () => src(paths.scripts.readPaths)
+export const devJs = () => src(config.scripts.readPaths)
   .pipe(plumber())
   .pipe(sourcemaps.init())
-  .pipe(babel({presets: ['es2015']}))
-  // .pipe(uglify())
-  .pipe(concat('main.js'))
+  .pipe(uglify())
+  // .pipe(concat('main.js'))
   // .pipe(rename({suffix: '.min'}))
   .pipe(sourcemaps.write('./'))
-  .pipe(dest(`${paths.out}/${paths.scripts.out}/`))
+  .pipe(dest(`${config.out}/${config.scripts.out}/`))
+  .pipe(browserSync.reload({stream: true}))
 
-
-export const devTs = () => src(paths.scripts.readPaths)
+export const copyRequirejs = () => src(config.requirejs)
   .pipe(plumber())
   .pipe(sourcemaps.init())
-  .pipe(tsc({
-    target: 'ES3',
-    module: 'umd'
-  }))
-  .pipe(concat('index.js'))
+  .pipe(uglify())
   .pipe(sourcemaps.write('./'))
-  .pipe(dest(`${paths.out}/${paths.scripts.out}`))
+  .pipe(dest(`${config.out}${config.scripts.out}`))
+  .pipe(browserSync.reload({stream: true}))

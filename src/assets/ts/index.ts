@@ -1,12 +1,5 @@
-import core = require("./core/pessoa")
+import SlideMenu from './SlideMenu'
 
-let atributos = {
-  nome: "Deglier S. Amorim",
-  idade: "21",
-  tecnologias: [
-    'css', 'html', 'javascript', 'php', 'ruby', 'python'
-  ]
-}
-const deglier = new core.Pessoa(atributos)
-let saida = deglier.sayHello()
-document.write("Hello")
+
+// Configurando o SlideMenu
+var mainMenu = new SlideMenu('.toggle-menu', '.wrapper', 'show-menu')

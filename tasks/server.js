@@ -1,10 +1,10 @@
-import paths from '../config'
+import config from '../config'
 import browserSync from 'browser-sync'
 
 export const server = () => {
   browserSync({
     server: {
-      baseDir: paths.out
+      baseDir: config.out
     }
   })
 }

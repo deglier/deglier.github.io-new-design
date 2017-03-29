@@ -118,7 +118,7 @@
     "options":{
       "padding": "10",
       "baseSize": 1,
-      "cssFile": "src/sass/_sprite.sass",
+      "cssFile": "src/sass/_sprite.scss",
       "svg": { 
         "sprite": "src/img/sprite.svg"
       }

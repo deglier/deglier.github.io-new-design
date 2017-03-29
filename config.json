@@ -1,6 +1,6 @@
 {
   "in": "src",
-  "out": "dist",
+  "out": "build",
   "requirejs": "bower_components/requirejs/require.js",
 
 

@@ -30,5 +30,8 @@
     "gulp-uglify": "^2.1.1",
     "pug": "^2.0.0-beta11",
     "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "global": "^4.3.1"
   }
 }

@@ -109,19 +109,21 @@
     ],
     "out": "/assets/img"
   },
-    "svg": {
+
+
+  "svg": {
     "readPaths": [
       "src/svg/**/*.svg"
     ],
     "options":{
-      "padding": 10,
-      "baseSize": 15,
-      "cssFile": "sass/_sprite.sass",
+      "padding": "10",
+      "baseSize": 1,
+      "cssFile": "src/sass/_sprite.sass",
       "svg": { 
-        "sprite": "../img/sprite.svg"
+        "sprite": "src/img/sprite.svg"
       }
     },
-    "svgFile":"../img/sprite.svg",
+    "svgFile":"src/img/sprite.svg",
     "watch": [
       "src/svg/**/*.svg"
     ],

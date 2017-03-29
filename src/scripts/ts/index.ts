@@ -1,3 +1,3 @@
-import ToggleMenu from './Bulma/ToggleMenu'
+import Toggle from './classes/Toggle'
 
-let slideMenu = new ToggleMenu("nav-toggle", "nav-menu")
+let slideMenu = new Toggle("nav-toggle", "nav-menu")

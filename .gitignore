@@ -4,4 +4,4 @@ bower_components
 yarn.lock
 yarn-error.log
 .vscode
-./src/scripts/js/**/*.js
+src/scripts/js/*

@@ -1,6 +1,7 @@
 node_modules
-dist
+build
 bower_components
 yarn.lock
 yarn-error.log
 .vscode
+./src/scripts/js/**/*.js
